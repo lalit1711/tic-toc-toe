@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <style>
+        .column {
+            border: 1px solid;
+            height: 200px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 100px;
+            font-weight: 900;
+
+        }
+
+        .main-contanier {
+            width: 75%
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p class="subtitle">
+        Tic <strong>toc</strong>!
+    </p>
+    <div class="container card main-contanier">
+        <div class="columns is-multiline is-paddingless is-marginless" id="game-area"></div>
+        <br />
+        <p id="whos-chance" class="subtitle"></p>
+        <button class="button" onclick="reset()">Reset</button>
+        <p id="winner" class="title"></p>
+
+    </div>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="tic-toc.js"></script>
+
+</html>
